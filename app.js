@@ -29,12 +29,3 @@ button.addEventListener("click", function(e){
         input.value = "";
     }
 });
-
-input.addEventListener("focus", function(){
-    input.value = "";
-});
-
-input.addEventListener("blur", function(){
-    if(!(input.value === "Введите дело" || input.value === ""));
-    input.value = "Введите дело";
-});
